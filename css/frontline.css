@@ -1,0 +1,367 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background: f1bff;
+    min-height: 1000px;
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+}
+
+.section-padding{
+    padding: 100px 0;
+}
+
+#home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  rgba(0,0,0,0.4) url(../images/frontline\ main\ cover.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+
+
+
+.nav-item a:hover{
+    color: black;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+
+.container img{
+    border-radius: 20px;
+}
+
+
+#home .content{
+    max-width: 900px;
+    text-align: center;
+}
+
+#home .content h2{
+    font-size: 3em;
+    color: white;
+    
+}
+
+#home .content p{
+    font-size: 1em;
+    color: white;
+}
+
+#services{
+    background: rgba(0,0,0,0.2) url(../images/ON\ TIME\ DELIVERY.png);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50{
+    position: relative;
+    width: 50%;
+}
+
+.row h5{
+    color: white;
+}
+
+.menu .title{
+    align-items: center;
+}
+
+.menu h2{
+    color: black;
+}
+
+.menu .section-header p{
+    color: black;
+}
+
+.section-header{
+    margin-top: 50px;
+}
+
+.titleText{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.jbl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.jbl .card{
+    background: white;
+}
+
+.card{
+    height: 314px;
+    width: 305px;
+    padding: 20px 35px;
+    background: rgb(231, 231, 231);
+    border-radius: 30px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    gap: 20px;
+}
+
+.card span{
+    font-size: 3.5rem;
+}
+
+
+
+.jbl .socials{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    transition: .3s ease-in-out;
+}
+
+.jbl .socials i:hover{
+    padding: 2px 2px 2px 2px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+
+.wrapper{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    padding: 2.5rem;
+    
+}
+
+.item{
+    animation: animate 6s alternate linear infinite;
+}
+
+.wrapper:hover .item{
+    animation-play-state: paused;
+}
+
+@keyframes animate{
+    0%{
+        transform: translate3d(0, 0, 0);
+    }
+    100%{
+        transform: translate3d(+500px, 0, 0);
+    }
+}
+
+
+span{
+    color: #000;
+}
+
+.navbar .navbar-brand{
+    color: rgb(161, 161, 161);
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navbar .navbar-brand img{
+    width: 40%;
+}
+
+.navbar .navbar-brand:focus,
+.navbar .navbar-brand:hover{
+    color: #000;
+    
+}
+
+.navbar .navbar-nav .nav-link{
+    color: #000;
+}
+
+.w-100{
+    height: 100vh;
+}
+
+.services .card-body i{
+    font-size: 80px;
+}
+
+footer a{
+    text-decoration: none;
+    color: gray;
+}
+
+
+.team .card-body i{
+    font-size: 20px;
+    margin: 25px 0px;
+    color: green;
+}
+
+
+.team .card{
+    box-shadow: 15px 15px 40px rgba(0,0,0,0.2);
+}
+
+
+
+.news{
+    color: black;
+    background: rgb(231, 231, 231);
+}
+.btn2{
+    
+    border-radius: 5px;
+    height: 45px;
+    width: 100px;
+    background: white;
+    margin-left: -10px;
+    font-weight: 600;
+}
+
+.news input{
+    height: 45px;
+    width: 50%;
+    border: 2px solid white;
+    outline: none;
+    background: black;
+    color: white;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.news ::placeholder{
+    color: white;
+}
+
+.news p{
+    margin: 0;
+}
+
+.news a{
+    text-decoration: none;
+    color: #000;
+}
+
+.fab{
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+.news .pb-3{
+    color: #000;
+}
+
+.jbl .card-body .socials i{
+    font-size: 2.5rem;
+}
+
+.menu .jbl i{
+    font-size: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query */
+
+@media  (max-width: 991px){
+    .carousel-caption{
+        margin-top: 1000px;
+    }
+
+    .carousel-caption p{
+        width: 100%;
+    }
+
+    .jbl{
+        display: block;
+        }
+
+        .jbl .card{
+            width: auto;
+        }
+
+        .row
+       {
+        flex-direction: column;
+       } 
+
+       .container{
+        justify-content: center;
+       }
+
+       #home{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:  rgba(0,0,0,0.4) url(../images/frontline\ mobile\ new.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: darken;
+        min-height: 600px;
+    }
+
+       
+}
+
+@media (min-width: 350px){
+   
+
+    .services{
+        margin-top: -100px;
+    }
+
+    @keyframes animate{
+        0%{
+            transform: translate3d(0, 0, 0);
+        }
+        100%{
+            transform: translate3d(-950px, 0, 0);
+        }
+    }
+
+    
+
+}
+
